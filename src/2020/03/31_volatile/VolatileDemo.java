@@ -9,6 +9,7 @@ class MyData{
     //此时number前是加了volatile，不保证原子性
     public  void addPlusPlus(){
         number++;
+
     }
     AtomicInteger atomicInteger = new AtomicInteger();
     public void addAtomic(){

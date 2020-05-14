@@ -3,7 +3,7 @@
  */
 
 public class SingeletonDemo {
-    private  static SingeletonDemo instance = null;
+    private  static volatile SingeletonDemo instance = null;
     private SingeletonDemo(){
         System.out.println(Thread.currentThread().getName()+"\t我是构造方法singletonDemo");
     }
