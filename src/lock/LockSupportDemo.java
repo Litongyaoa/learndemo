@@ -1,6 +1,6 @@
 package lock;
 
-import java.util.concurrent.locks.LockSupport;
+
 
 /**
  * @author admin
@@ -8,7 +8,6 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportDemo {
 
     public static void main(String[] args) {
-
-
+        System.out.println(System.nanoTime());
     }
 }

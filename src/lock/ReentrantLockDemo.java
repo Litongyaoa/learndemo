@@ -44,11 +44,9 @@ public class ReentrantLockDemo {
 
             @Override
             public void run() {
-                reentrantLock.lock();
                 System.out.println("第一次获取锁,这个锁是:" + this);
                 int index = 1;
                 while (true) {
-                    reentrantLock.lock();
                     System.out.println("第" + (++index) + "次获取锁,这个锁收:" + this);
                     if (index == 11) {
                         break;
@@ -59,6 +57,11 @@ public class ReentrantLockDemo {
 
             }
 
+
+        }).start();
+
+
+        new Thread(() -> {
 
         }).start();
 
